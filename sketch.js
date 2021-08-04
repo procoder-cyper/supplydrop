@@ -56,7 +56,13 @@ function draw() {
 	
   if(keyDown(DOWN_ARROW)) {
 	Matter.Body.setStatic(packageBody,false);
-	}	
+	}
+  if(keyDown(RIGHT_ARROW)){
+  helicopterSprite.x = helicopterSprite.x + 5
+  }
+ if(keyDown(LEFT_ARROW)){
+ helicopterSprite.x = helicopterSprite.x - 5
+ }
 	
 	box1.display();
 	box2.display();
