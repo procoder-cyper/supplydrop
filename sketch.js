@@ -52,17 +52,19 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
   drawSprites();
-
+ 
 	
-  if(keyDown(DOWN_ARROW)) {
-	Matter.Body.setStatic(packageBody,false);
-	}
-  if(keyDown(RIGHT_ARROW)){
+if(keyDown(RIGHT_ARROW)){
   helicopterSprite.x = helicopterSprite.x + 5
   }
  if(keyDown(LEFT_ARROW)){
  helicopterSprite.x = helicopterSprite.x - 5
  }
+	
+  if(keyDown(DOWN_ARROW)) {
+	Matter.Body.setStatic(packageBody,false);
+	}
+  
 	
 	box1.display();
 	box2.display();
