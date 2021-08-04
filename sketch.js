@@ -54,14 +54,14 @@ function draw() {
   drawSprites();
  
 	
-if(keyDown(RIGHT_ARROW)){
+if(keyDown("right")){
   helicopterSprite.x = helicopterSprite.x + 5
   }
- if(keyDown(LEFT_ARROW)){
+ if(keyDown("left")){
  helicopterSprite.x = helicopterSprite.x - 5
  }
 	
-  if(keyDown(DOWN_ARROW)) {
+  if(keyDown("down")) {
 	Matter.Body.setStatic(packageBody,false);
 	}
   
