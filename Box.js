@@ -13,6 +13,7 @@ class Box{
     }
 
     display() {
+        Matter.Body.translate(body , translate)
         rectMode(CENTER);
         fill(this.color);
         rect(this.body.position.x,this.body.position.y,this.width,this.height);
