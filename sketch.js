@@ -59,9 +59,11 @@ function draw() {
 	
 if(keyDown("right")){
   helicopterSprite.x = helicopterSprite.x + 5
+ packageBody.translate(helicopterSprite.x)
   }
  if(keyDown("left")){
  helicopterSprite.x = helicopterSprite.x - 5
+	 packageBody.translate(helicopterSprite.x)
  }
 	
   if(keyDown("down")) {
